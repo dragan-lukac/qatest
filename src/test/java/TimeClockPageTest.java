@@ -20,7 +20,7 @@ public class TimeClockPageTest {
         SignInPage signin = new SignInPage(driver);
         signin.signIn("dragan.lukac@gmail.com", "SNQnpknQP8rEiUYx6xkZ");
         TimeClockPage timeclock = new TimeClockPage(driver);
-        timeclock.clickOnTimeClockButton();
+        timeclock.ClickOnTimeClockButton();
     }
     //After Each test
     @After

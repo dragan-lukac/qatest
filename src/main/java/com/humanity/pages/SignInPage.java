@@ -91,8 +91,8 @@ public class SignInPage {
     }
 
     public void waitForDashboardElement(){
-        WebElement dashboardTitle = (new WebDriverWait(driver, 30))
-                .until(ExpectedConditions.presenceOfElementLocated
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+                wait.until(ExpectedConditions.presenceOfElementLocated
                         (By.cssSelector("#content > div > div.header > div.title > h1")));
     }
 
@@ -104,8 +104,6 @@ public class SignInPage {
         }
         catch (Exception e){
         }
-        //String buttonStatusText = ClockInOutButtonText();
-        //Assert.assertEquals("Clock Out", buttonStatusText);
     }
 
 

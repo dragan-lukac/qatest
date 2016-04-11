@@ -32,12 +32,12 @@ public class TimeClockPage {
 
     //######### Methods ########################
     //Click on Time Clock
-    public void clickOnTimeClockButton(){
+    public void ClickOnTimeClockButton(){
         timeClockButton.click();
     }
 
     // Click on Clock In/Out Button
-    public void clickOnClockInOutButton(){
+    public void ClickOnClockInOutButton(){
         clockInOutButton.click();
     }
 
@@ -55,7 +55,7 @@ public class TimeClockPage {
             wait.until(ExpectedConditions.textToBePresentInElementLocated
                     (By.cssSelector("#content > div > div.header > div.controls > div:nth-child(2) > div:nth-child(1)" +
                             " > div > button:nth-child(1)"), "Clock In"));
-            clickOnClockInOutButton();
+            ClickOnClockInOutButton();
         }
         catch (Exception e){
         }
