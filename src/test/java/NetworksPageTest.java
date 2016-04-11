@@ -1,12 +1,11 @@
 import com.humanity.pages.NetworksPage;
+import com.humanity.pages.SignInPage;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import com.humanity.pages.SignInPage;
-import org.junit.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -36,7 +35,7 @@ public class NetworksPageTest {
 
         networks.navigateToWorkplacePage();
 
-        int counter = 18;
+        int counter = 22;
 
         networks.clickOnAddWorkplaceButton();
         networks.clickOnCreateNewTab();
